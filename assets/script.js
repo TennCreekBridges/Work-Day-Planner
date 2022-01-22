@@ -93,19 +93,21 @@ function timeColor() {
 
 // create function to enter an event, save to local storage and write to container
 function nineAm() {
-    var input1 = document.querySelector("#time9am");
-    var output1 = document.querySelector("#time9am");
-    var save = document.querySelector("#time9am");
-
-    save.addEventListener("click", updateOutput1);
-
-    output1.textContent = localStorage.getItem("content");
-    input1.value = localStorage.getItem("content");
-
+    // set variables for input, output and local storage
+    let input1 = document.querySelector("#time9am");
+    let output1 = document.querySelector("#time9am");
+    let save1 = document.querySelector("#time9am");
+    // listen for click on save button and execute function updateOutput1
+    save1.addEventListener("click", updateOutput1);
+    // looks for existing local storage content from user input and adds if exists
+    output1.textContent = localStorage.getItem("content1");
+    input1.value = localStorage.getItem("content1");
+    // sets key value pair and defines content1
     function updateOutput1() {
-        localStorage.setItem("content", input1.value);
-
+        let content1 = "";
+        localStorage.setItem("content1", input1.value);
+        // displays old and new content in time block
         output1.textContent = input1.value;
+        console.log(content1);
     }
 }
-
