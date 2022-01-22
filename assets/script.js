@@ -108,6 +108,41 @@ function nineAm() {
         localStorage.setItem("content1", input1.value);
         // displays old and new content in time block
         output1.textContent = input1.value;
-        console.log(content1);
+    }
+}
+function tenAm() {
+    // set variables for input, output and local storage
+    let input2 = document.querySelector("#time10am");
+    let output2 = document.querySelector("#time10am");
+    let save2 = document.querySelector("#time10am");
+    // listen for click on save button and execute function updateOutput2
+    save2.addEventListener("click", updateOutput2);
+    // looks for existing local storage content from user input and adds if exists
+    output2.textContent = localStorage.getItem("content2");
+    input2.value = localStorage.getItem("content2");
+    // sets key value pair and defines content2
+    function updateOutput2() {
+        let content2 = "";
+        localStorage.setItem("content2", input2.value);
+        // displays old and new content in time block
+        output2.textContent = input2.value;
+    }
+}
+function elevenAm() {
+    // set variables for input, output and local storage
+    let input3 = document.querySelector("#time11am");
+    let output3 = document.querySelector("#time11am");
+    let save3 = document.querySelector("#time11am");
+    // listen for click on save button and execute function updateOutput3
+    save3.addEventListener("click", updateOutput3);
+    // looks for existing local storage content from user input and adds if exists
+    output3.textContent = localStorage.getItem("content3");
+    input3.value = localStorage.getItem("content3");
+    // sets key value pair and defines content3
+    function updateOutput3() {
+        let content3 = "";
+        localStorage.setItem("content3", input3.value);
+        // displays old and new content in time block
+        output3.textContent = input3.value;
     }
 }
