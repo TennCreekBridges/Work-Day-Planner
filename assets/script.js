@@ -90,3 +90,21 @@ function timeColor() {
         $("#5pm").addClass("future");
     }
 }
+
+// create function to enter an event, save to local storage and write to container
+function nineAm() {
+    var input1 = document.querySelector("#time9am");
+    var output1 = document.querySelector("#time9am");
+    var save = document.querySelector("#time9am");
+
+    save.addEventListener("click", updateOutput1);
+
+    output1.textContent = localStorage.getItem("content");
+    input1.value = localStorage.getItem("content");
+
+    function updateOutput1() {
+        localStorage.setItem("content", input1.value);
+
+        output1.textContent = input1.value;
+    }
+}
