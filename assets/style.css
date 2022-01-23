@@ -4,14 +4,17 @@ body {
   line-height: .8;
 }
 
+/*input area*/
 textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   padding: 10px;
+  border: .25 rem solid #000000;
 }
 
+/* set header style */
 .jumbotron {
   text-align: center;
   /* background-color: transparent; */
@@ -21,6 +24,12 @@ textarea {
   border-bottom: 5px solid black;
 }
 
+/* sets icon size */
+.fas {
+  font-size: 3rem;
+}
+
+/*set planner block styles */
 .description{
   white-space: pre-wrap;
 }
@@ -39,33 +48,31 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border: .25 rem solid #000000;
   width: 100px;
 }
 
+/* sets color block styles */
 .past {
   background-color: #d3d3d3;
   color: black;
-  font-size: .75rem;
 }
 
 .present {
   background-color: #98c9c2;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd90;
-  color: white;
+  color: black
 }
 
+/* style save button */
 .saveBtn {
-  /* border-left: 1px solid black; */
-  border: .25 rem solid #000000;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  background-color: rgb(144, 247, 236);
+  color: black;
 }
 
 .saveBtn i:hover {
@@ -73,10 +80,7 @@ textarea {
   transition: all .3s ease-in-out;
 }
 
-/* .input-group-prepend {
-  width: 100px;
-} */
-
+/* adjust row spacing */
 .mb-3,
 .my-3 {
   margin-bottom: 1% !important;

@@ -13,7 +13,7 @@ window.onload = function() {
     fivePm();
 }
 
-// add current time and day to jumbotron
+// add current time and day to jumbotron via moment.js
 
 var currentDay = moment().format("dddd LL");
 $("#currentDay").append(currentDay);
@@ -43,7 +43,7 @@ function timeColor() {
     if (now > 11) {
         $("#time11am").addClass ("past");
     } else if (now >= 11 && now < 12) {
-        $("#time10am").addClass("present");
+        $("#time11am").addClass("present");
     } else if (now < 11) {
         $("#time11am").addClass("future");
     }
@@ -96,7 +96,7 @@ function nineAm() {
     // set variables for input, output and local storage
     let input1 = document.querySelector("#time9am");
     let output1 = document.querySelector("#time9am");
-    let save1 = document.querySelector("#time9am");
+    let save1 = document.querySelector("#btn9am");
     // listen for click on save button and execute function updateOutput1
     save1.addEventListener("click", updateOutput1);
     // looks for existing local storage content from user input and adds if exists
@@ -114,7 +114,7 @@ function tenAm() {
     // set variables for input, output and local storage
     let input2 = document.querySelector("#time10am");
     let output2 = document.querySelector("#time10am");
-    let save2 = document.querySelector("#time10am");
+    let save2 = document.querySelector("#btn10am");
     // listen for click on save button and execute function updateOutput2
     save2.addEventListener("click", updateOutput2);
     // looks for existing local storage content from user input and adds if exists
@@ -132,7 +132,7 @@ function elevenAm() {
     // set variables for input, output and local storage
     let input3 = document.querySelector("#time11am");
     let output3 = document.querySelector("#time11am");
-    let save3 = document.querySelector("#time11am");
+    let save3 = document.querySelector("#btn11am");
     // listen for click on save button and execute function updateOutput3
     save3.addEventListener("click", updateOutput3);
     // looks for existing local storage content from user input and adds if exists
@@ -150,7 +150,7 @@ function twelvePm() {
     // set variables for input, output and local storage
     let input4 = document.querySelector("#time12pm");
     let output4 = document.querySelector("#time12pm");
-    let save4 = document.querySelector("#time12pm");
+    let save4 = document.querySelector("#btn12pm");
     // listen for click on save button and execute function updateOutput4
     save4.addEventListener("click", updateOutput4);
     // looks for existing local storage content from user input and adds if exists
@@ -168,7 +168,7 @@ function twelvePm() {
     // set variables for input, output and local storage
     let input4 = document.querySelector("#time12pm");
     let output4 = document.querySelector("#time12pm");
-    let save4 = document.querySelector("#time12pm");
+    let save4 = document.querySelector("#btn12pm");
     // listen for click on save button and execute function updateOutput4
     save4.addEventListener("click", updateOutput4);
     // looks for existing local storage content from user input and adds if exists
@@ -186,7 +186,7 @@ function onePm() {
     // set variables for input, output and local storage
     let input5 = document.querySelector("#time1pm");
     let output5 = document.querySelector("#time1pm");
-    let save5 = document.querySelector("#time1pm");
+    let save5 = document.querySelector("#btn1pm");
     // listen for click on save button and execute function updateOutput5
     save5.addEventListener("click", updateOutput5);
     // looks for existing local storage content from user input and adds if exists
@@ -204,7 +204,7 @@ function twoPm() {
     // set variables for input, output and local storage
     let input6 = document.querySelector("#time2pm");
     let output6 = document.querySelector("#time2pm");
-    let save6 = document.querySelector("#time2pm");
+    let save6 = document.querySelector("#btn2pm");
     // listen for click on save button and execute function updateOutput6
     save6.addEventListener("click", updateOutput6);
     // looks for existing local storage content from user input and adds if exists
@@ -222,7 +222,7 @@ function threePm() {
     // set variables for input, output and local storage
     let input7 = document.querySelector("#time3pm");
     let output7 = document.querySelector("#time3pm");
-    let save7 = document.querySelector("#time3pm");
+    let save7 = document.querySelector("#btn3pm");
     // listen for click on save button and execute function updateOutput7
     save7.addEventListener("click", updateOutput7);
     // looks for existing local storage content from user input and adds if exists
@@ -240,7 +240,7 @@ function fourPm() {
     // set variables for input, output and local storage
     let input8 = document.querySelector("#time4pm");
     let output8 = document.querySelector("#time4pm");
-    let save8 = document.querySelector("#time4pm");
+    let save8 = document.querySelector("#btn4pm");
     // listen for click on save button and execute function updateOutput8
     save8.addEventListener("click", updateOutput8);
     // looks for existing local storage content from user input and adds if exists
@@ -258,7 +258,7 @@ function fivePm() {
     // set variables for input, output and local storage
     let input9 = document.querySelector("#time5pm");
     let output9 = document.querySelector("#time5pm");
-    let save9 = document.querySelector("#time5pm");
+    let save9 = document.querySelector("#btn5pm");
     // listen for click on save button and execute function updateOutput9
     save9.addEventListener("click", updateOutput9);
     // looks for existing local storage content from user input and adds if exists
