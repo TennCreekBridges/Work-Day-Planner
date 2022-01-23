@@ -1,7 +1,7 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: .8;
 }
 
 textarea {
@@ -14,10 +14,11 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-image: linear-gradient(rgb(144, 247, 236), rgb(40, 156, 145));
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 .description{
@@ -39,6 +40,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border: .25 rem solid #000000;
+  width: 100px;
 }
 
 .past {
@@ -48,17 +50,18 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #98c9c2;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #77dd90;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
+  border: .25 rem solid #000000;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
